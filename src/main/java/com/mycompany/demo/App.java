@@ -4,6 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.Arrays;
 
 /**
  * This example demonstrates serving up REST payloads encoded using Google Protocol Buffers.
@@ -20,8 +23,4 @@ public class App {
         return new ProtobufHttpMessageConverter();
     }
 
-    @Bean
-    PlayerRepository playerRepository() {
-        return new PlayerRepositoryDemoImpl();
-    }
 }

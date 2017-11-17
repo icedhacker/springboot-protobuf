@@ -1,10 +1,13 @@
 package com.mycompany.demo;
 
+import org.springframework.stereotype.Service;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Arrays.asList;
 
+@Service
 public class PlayerRepositoryDemoImpl implements PlayerRepository {
 
     Map<Integer, PlayerProtos.Player> players = new ConcurrentHashMap<>();

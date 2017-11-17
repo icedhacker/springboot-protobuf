@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.mycompany.demo;
+option java_package = "com.mycompany.demo";
+option java_outer_classname = "ImageTest";
+
+
+message Data {
+    string name = 1;
+    bytes photoData = 2;
+}
